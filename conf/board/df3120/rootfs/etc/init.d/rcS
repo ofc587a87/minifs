@@ -35,3 +35,7 @@ hciconfig hci0 up
 
 # Disable console blanking
 printf "\e[9;0]" >/dev/tty0
+
+#mount SD card
+echo "* Mounting SD card"
+mount /dev/mmcblk0p2 /mnt/SD -o ro,noatime
